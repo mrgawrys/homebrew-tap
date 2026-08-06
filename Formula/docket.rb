@@ -1,5 +1,3 @@
-# Template for mrgawrys/homebrew-tap — see packaging/README.md.
-# The two sha256 placeholders must be replaced from the release's SHA256SUMS.
 class Docket < Formula
   desc "Pre-runs Claude Code's /code-review on PRs awaiting your review"
   homepage "https://github.com/mrgawrys/docket"
@@ -7,12 +5,12 @@ class Docket < Formula
 
   on_arm do
     url "https://github.com/mrgawrys/docket/releases/download/v#{version}/docket-darwin-arm64.tar.gz"
-    sha256 "PLACEHOLDER_SHA256_ARM64"
+    sha256 "7ba540c4b18281f80ee8e29785ab14a7affd646ab6172c73fe62c2e55d873798"
   end
 
   on_intel do
     url "https://github.com/mrgawrys/docket/releases/download/v#{version}/docket-darwin-x64.tar.gz"
-    sha256 "PLACEHOLDER_SHA256_X64"
+    sha256 "5f2548336d167e547277de25fad9a516b24bbc8612d7b8b0e7823e22f64cdd23"
   end
 
   depends_on :macos
