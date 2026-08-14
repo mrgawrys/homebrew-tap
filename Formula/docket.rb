@@ -1,16 +1,19 @@
+# Source of truth for mrgawrys/homebrew-tap. The tap's copy is generated from
+# this file on every tag push by .github/workflows/release.yml, which fills in
+# the version and both sha256s — so edits made in the tap are lost next release.
 class Docket < Formula
   desc "Pre-runs Claude Code's /code-review on PRs awaiting your review"
   homepage "https://github.com/mrgawrys/docket"
-  version "0.1.0"
+  version "0.2.0"
 
   on_arm do
     url "https://github.com/mrgawrys/docket/releases/download/v#{version}/docket-darwin-arm64.tar.gz"
-    sha256 "7ba540c4b18281f80ee8e29785ab14a7affd646ab6172c73fe62c2e55d873798"
+    sha256 "d973a14296bc4ccd7e31b2287d77f01db70caace33c717e9b534a59be0787f9a"
   end
 
   on_intel do
     url "https://github.com/mrgawrys/docket/releases/download/v#{version}/docket-darwin-x64.tar.gz"
-    sha256 "5f2548336d167e547277de25fad9a516b24bbc8612d7b8b0e7823e22f64cdd23"
+    sha256 "0c6163a9f659a2c01ef99e2381a3c544202085f565b1d04bdeb62e4a2226d468"
   end
 
   depends_on :macos
