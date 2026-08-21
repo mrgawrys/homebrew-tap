@@ -4,16 +4,16 @@
 class Docket < Formula
   desc "Pre-runs Claude Code's /code-review on PRs awaiting your review"
   homepage "https://github.com/mrgawrys/docket"
-  version "0.3.3"
+  version "0.3.4"
 
   on_arm do
     url "https://github.com/mrgawrys/docket/releases/download/v#{version}/docket-darwin-arm64.tar.gz"
-    sha256 "019cca803dae5c604813f90180009ee6f01bd6f3e435b6c437fece94a74fc1c8"
+    sha256 "ba41e5556295d7d0744f0cd91728694b55ae5b3bcb4c5ad63bc92919cd5df46b"
   end
 
   on_intel do
     url "https://github.com/mrgawrys/docket/releases/download/v#{version}/docket-darwin-x64.tar.gz"
-    sha256 "da2f67c89f86fa22d0f6f6b4c6b89b762e871289644704836333985e3c6da4dc"
+    sha256 "ce354de267053486cecc6e50246422834fd6d49a9d83e9ba88378a067f606b57"
   end
 
   depends_on :macos
